@@ -77,9 +77,9 @@ header::before{
     text-align: center;
 }
 .box{
-    width: 25%;
+    width: 25vw;
     
-    height: 400px;
+    height: auto;
     border: 4px solid rgb(61, 175, 209);
     margin: 0px 20px;
     background-color: rgb(200, 223, 243);
@@ -90,16 +90,21 @@ header::before{
 #box1 img{
     width: auto;
     height: 165px;
+    overflow: hidden;
 }
 #box2 img{
     width: auto;
     height: 200px;
     margin-left: 17px;
+    overflow: hidden;
+
 }
 #box3 img{
     width: auto;
     height: 200px;
     margin-left: 35px;
+    overflow: hidden;
+
 }
 #contener1{
     display: flex;
@@ -148,4 +153,9 @@ header::before{
     color: white;
     background-color: black;
 }
- 
+@media(max-width:867px){
+   #contener1, #commerce{
+    flex-direction: column;
+   }
+  
+} 
